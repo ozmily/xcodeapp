@@ -14,6 +14,10 @@
 		BCE5E87E1EA55D9600EAE8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE5E87C1EA55D9600EAE8A0 /* LaunchScreen.storyboard */; };
 		BCE5E8891EA55D9600EAE8A0 /* Kent_Denver_Lunch_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8881EA55D9600EAE8A0 /* Kent_Denver_Lunch_MenuTests.swift */; };
 		BCE5E8941EA55D9600EAE8A0 /* Kent_Denver_Lunch_MenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8931EA55D9600EAE8A0 /* Kent_Denver_Lunch_MenuUITests.swift */; };
+		BCE5E8A81EA55DBF00EAE8A0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE5E8A71EA55DBF00EAE8A0 /* NotificationCenter.framework */; };
+		BCE5E8AB1EA55DBF00EAE8A0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8AA1EA55DBF00EAE8A0 /* TodayViewController.swift */; };
+		BCE5E8AE1EA55DBF00EAE8A0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE5E8AC1EA55DBF00EAE8A0 /* MainInterface.storyboard */; };
+		BCE5E8B21EA55DBF00EAE8A0 /* Kent Denver Lunch.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCE5E8A51EA55DBF00EAE8A0 /* Kent Denver Lunch.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,28 @@
 			remoteGlobalIDString = BCE5E86F1EA55D9600EAE8A0;
 			remoteInfo = "Kent Denver Lunch Menu";
 		};
+		BCE5E8B01EA55DBF00EAE8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCE5E8681EA55D9600EAE8A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE5E8A41EA55DBF00EAE8A0;
+			remoteInfo = "Kent Denver Lunch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCE5E8B61EA55DBF00EAE8A0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCE5E8B21EA55DBF00EAE8A0 /* Kent Denver Lunch.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BCE5E8701EA55D9600EAE8A0 /* Kent Denver Lunch Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kent Denver Lunch Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +72,11 @@
 		BCE5E88F1EA55D9600EAE8A0 /* Kent Denver Lunch MenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kent Denver Lunch MenuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE5E8931EA55D9600EAE8A0 /* Kent_Denver_Lunch_MenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kent_Denver_Lunch_MenuUITests.swift; sourceTree = "<group>"; };
 		BCE5E8951EA55D9600EAE8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE5E8A51EA55DBF00EAE8A0 /* Kent Denver Lunch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Kent Denver Lunch.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE5E8A71EA55DBF00EAE8A0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		BCE5E8AA1EA55DBF00EAE8A0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BCE5E8AD1EA55DBF00EAE8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BCE5E8AF1EA55DBF00EAE8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +101,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCE5E8A21EA55DBF00EAE8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE5E8A81EA55DBF00EAE8A0 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +118,8 @@
 				BCE5E8721EA55D9600EAE8A0 /* Kent Denver Lunch Menu */,
 				BCE5E8871EA55D9600EAE8A0 /* Kent Denver Lunch MenuTests */,
 				BCE5E8921EA55D9600EAE8A0 /* Kent Denver Lunch MenuUITests */,
+				BCE5E8A91EA55DBF00EAE8A0 /* Kent Denver Lunch */,
+				BCE5E8A61EA55DBF00EAE8A0 /* Frameworks */,
 				BCE5E8711EA55D9600EAE8A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +130,7 @@
 				BCE5E8701EA55D9600EAE8A0 /* Kent Denver Lunch Menu.app */,
 				BCE5E8841EA55D9600EAE8A0 /* Kent Denver Lunch MenuTests.xctest */,
 				BCE5E88F1EA55D9600EAE8A0 /* Kent Denver Lunch MenuUITests.xctest */,
+				BCE5E8A51EA55DBF00EAE8A0 /* Kent Denver Lunch.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +166,24 @@
 			path = "Kent Denver Lunch MenuUITests";
 			sourceTree = "<group>";
 		};
+		BCE5E8A61EA55DBF00EAE8A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE5E8A71EA55DBF00EAE8A0 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCE5E8A91EA55DBF00EAE8A0 /* Kent Denver Lunch */ = {
+			isa = PBXGroup;
+			children = (
+				BCE5E8AA1EA55DBF00EAE8A0 /* TodayViewController.swift */,
+				BCE5E8AC1EA55DBF00EAE8A0 /* MainInterface.storyboard */,
+				BCE5E8AF1EA55DBF00EAE8A0 /* Info.plist */,
+			);
+			path = "Kent Denver Lunch";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +194,12 @@
 				BCE5E86C1EA55D9600EAE8A0 /* Sources */,
 				BCE5E86D1EA55D9600EAE8A0 /* Frameworks */,
 				BCE5E86E1EA55D9600EAE8A0 /* Resources */,
+				BCE5E8B61EA55DBF00EAE8A0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCE5E8B11EA55DBF00EAE8A0 /* PBXTargetDependency */,
 			);
 			name = "Kent Denver Lunch Menu";
 			productName = "Kent Denver Lunch Menu";
@@ -181,6 +242,23 @@
 			productReference = BCE5E88F1EA55D9600EAE8A0 /* Kent Denver Lunch MenuUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BCE5E8A41EA55DBF00EAE8A0 /* Kent Denver Lunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE5E8B31EA55DBF00EAE8A0 /* Build configuration list for PBXNativeTarget "Kent Denver Lunch" */;
+			buildPhases = (
+				BCE5E8A11EA55DBF00EAE8A0 /* Sources */,
+				BCE5E8A21EA55DBF00EAE8A0 /* Frameworks */,
+				BCE5E8A31EA55DBF00EAE8A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kent Denver Lunch";
+			productName = "Kent Denver Lunch";
+			productReference = BCE5E8A51EA55DBF00EAE8A0 /* Kent Denver Lunch.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +283,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = BCE5E86F1EA55D9600EAE8A0;
 					};
+					BCE5E8A41EA55DBF00EAE8A0 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = BCE5E86B1EA55D9600EAE8A0 /* Build configuration list for PBXProject "Kent Denver Lunch Menu" */;
@@ -223,6 +305,7 @@
 				BCE5E86F1EA55D9600EAE8A0 /* Kent Denver Lunch Menu */,
 				BCE5E8831EA55D9600EAE8A0 /* Kent Denver Lunch MenuTests */,
 				BCE5E88E1EA55D9600EAE8A0 /* Kent Denver Lunch MenuUITests */,
+				BCE5E8A41EA55DBF00EAE8A0 /* Kent Denver Lunch */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +332,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE5E8A31EA55DBF00EAE8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE5E8AE1EA55DBF00EAE8A0 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +371,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCE5E8A11EA55DBF00EAE8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE5E8AB1EA55DBF00EAE8A0 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +391,11 @@
 			isa = PBXTargetDependency;
 			target = BCE5E86F1EA55D9600EAE8A0 /* Kent Denver Lunch Menu */;
 			targetProxy = BCE5E8901EA55D9600EAE8A0 /* PBXContainerItemProxy */;
+		};
+		BCE5E8B11EA55DBF00EAE8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCE5E8A41EA55DBF00EAE8A0 /* Kent Denver Lunch */;
+			targetProxy = BCE5E8B01EA55DBF00EAE8A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +414,14 @@
 				BCE5E87D1EA55D9600EAE8A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BCE5E8AC1EA55DBF00EAE8A0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE5E8AD1EA55DBF00EAE8A0 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +525,7 @@
 		BCE5E8991EA55D9600EAE8A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Kent Denver Lunch Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,6 +538,7 @@
 		BCE5E89A1EA55D9600EAE8A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Kent Denver Lunch Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -488,6 +602,30 @@
 			};
 			name = Release;
 		};
+		BCE5E8B41EA55DBF00EAE8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Kent Denver Lunch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IoT.Kent-Denver-Lunch-Menu.Kent-Denver-Lunch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCE5E8B51EA55DBF00EAE8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Kent Denver Lunch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IoT.Kent-Denver-Lunch-Menu.Kent-Denver-Lunch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -521,6 +659,14 @@
 			buildConfigurations = (
 				BCE5E89F1EA55D9600EAE8A0 /* Debug */,
 				BCE5E8A01EA55D9600EAE8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCE5E8B31EA55DBF00EAE8A0 /* Build configuration list for PBXNativeTarget "Kent Denver Lunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE5E8B41EA55DBF00EAE8A0 /* Debug */,
+				BCE5E8B51EA55DBF00EAE8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
