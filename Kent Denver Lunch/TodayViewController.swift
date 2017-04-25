@@ -20,12 +20,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
    
     @IBOutlet var menu: UILabel!
   
-//    var request: Alamofire.Request?
     
     override func viewDidLoad() {
+        Alamofire.request("https://sheets.googleapis.com/v4/spreadsheets/1S_NuQRntEzbvWwR_gdig8g-_l1dxavw1qqTqt_PuuL4?key=AIzaSyDDwFFTlWwBNvBUWFD-zx67pqodqHDaZX0").responseJSON { response in
+            if let JSON = response.result.value {
+                self.menu.text = "JSON: \(JSON)"
+            }
+        }
         super.viewDidLoad()
-        let d = arc4random_uniform(100);
-        menu.text = String(d);
+//        let d = arc4random_uniform(100);
+//        menu.text = String(d);
 
         // Do any additional setup after loading the view from its nib.
     }
