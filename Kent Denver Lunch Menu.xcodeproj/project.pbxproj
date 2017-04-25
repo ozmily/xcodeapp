@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC9691DA1EA9279600F95BCF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9691C41EA9250900F95BCF /* Alamofire.framework */; };
+		BC9691DB1EA9279600F95BCF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9691C41EA9250900F95BCF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCE5E8741EA55D9600EAE8A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8731EA55D9600EAE8A0 /* AppDelegate.swift */; };
 		BCE5E8761EA55D9600EAE8A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8751EA55D9600EAE8A0 /* ViewController.swift */; };
 		BCE5E8791EA55D9600EAE8A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE5E8771EA55D9600EAE8A0 /* Main.storyboard */; };
@@ -21,6 +23,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BC9691C31EA9250900F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		BC9691C51EA9250900F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		BC9691C71EA9250900F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		BC9691C91EA9250900F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		BC9691CB1EA9250900F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		BC9691CD1EA9250900F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		BC9691CF1EA9250900F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		BC9691DC1EA9279600F95BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		BCE5E8851EA55D9600EAE8A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BCE5E8681EA55D9600EAE8A0 /* Project object */;
@@ -45,6 +103,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BC9691DE1EA9279700F95BCF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC9691DB1EA9279600F95BCF /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCE5E8B61EA55DBF00EAE8A0 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +128,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		BCE5E8701EA55D9600EAE8A0 /* Kent Denver Lunch Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kent Denver Lunch Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE5E8731EA55D9600EAE8A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE5E8751EA55D9600EAE8A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9691DA1EA9279600F95BCF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +183,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC9691B91EA9250900F95BCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC9691C41EA9250900F95BCF /* Alamofire.framework */,
+				BC9691C61EA9250900F95BCF /* Alamofire iOS Tests.xctest */,
+				BC9691C81EA9250900F95BCF /* Alamofire.framework */,
+				BC9691CA1EA9250900F95BCF /* Alamofire macOS Tests.xctest */,
+				BC9691CC1EA9250900F95BCF /* Alamofire.framework */,
+				BC9691CE1EA9250900F95BCF /* Alamofire tvOS Tests.xctest */,
+				BC9691D01EA9250900F95BCF /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BCE5E8671EA55D9600EAE8A0 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +206,7 @@
 				BCE5E8A91EA55DBF00EAE8A0 /* Kent Denver Lunch */,
 				BCE5E8A61EA55DBF00EAE8A0 /* Frameworks */,
 				BCE5E8711EA55D9600EAE8A0 /* Products */,
+				BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,11 +281,13 @@
 				BCE5E86D1EA55D9600EAE8A0 /* Frameworks */,
 				BCE5E86E1EA55D9600EAE8A0 /* Resources */,
 				BCE5E8B61EA55DBF00EAE8A0 /* Embed App Extensions */,
+				BC9691DE1EA9279700F95BCF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BCE5E8B11EA55DBF00EAE8A0 /* PBXTargetDependency */,
+				BC9691DD1EA9279600F95BCF /* PBXTargetDependency */,
 			);
 			name = "Kent Denver Lunch Menu";
 			productName = "Kent Denver Lunch Menu";
@@ -300,6 +388,12 @@
 			mainGroup = BCE5E8671EA55D9600EAE8A0;
 			productRefGroup = BCE5E8711EA55D9600EAE8A0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BC9691B91EA9250900F95BCF /* Products */;
+					ProjectRef = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BCE5E86F1EA55D9600EAE8A0 /* Kent Denver Lunch Menu */,
@@ -309,6 +403,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BC9691C41EA9250900F95BCF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BC9691C31EA9250900F95BCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC9691C61EA9250900F95BCF /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = BC9691C51EA9250900F95BCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC9691C81EA9250900F95BCF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BC9691C71EA9250900F95BCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC9691CA1EA9250900F95BCF /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = BC9691C91EA9250900F95BCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC9691CC1EA9250900F95BCF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BC9691CB1EA9250900F95BCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC9691CE1EA9250900F95BCF /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = BC9691CD1EA9250900F95BCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC9691D01EA9250900F95BCF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BC9691CF1EA9250900F95BCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BCE5E86E1EA55D9600EAE8A0 /* Resources */ = {
@@ -382,6 +528,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BC9691DD1EA9279600F95BCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = BC9691DC1EA9279600F95BCF /* PBXContainerItemProxy */;
+		};
 		BCE5E8861EA55D9600EAE8A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BCE5E86F1EA55D9600EAE8A0 /* Kent Denver Lunch Menu */;
@@ -606,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Kent Denver Lunch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IoT.Kent-Denver-Lunch-Menu.Kent-Denver-Lunch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -618,6 +770,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Kent Denver Lunch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IoT.Kent-Denver-Lunch-Menu.Kent-Denver-Lunch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -645,6 +798,7 @@
 				BCE5E89A1EA55D9600EAE8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCE5E89B1EA55D9600EAE8A0 /* Build configuration list for PBXNativeTarget "Kent Denver Lunch MenuTests" */ = {
 			isa = XCConfigurationList;
@@ -653,6 +807,7 @@
 				BCE5E89D1EA55D9600EAE8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCE5E89E1EA55D9600EAE8A0 /* Build configuration list for PBXNativeTarget "Kent Denver Lunch MenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +816,7 @@
 				BCE5E8A01EA55D9600EAE8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCE5E8B31EA55DBF00EAE8A0 /* Build configuration list for PBXNativeTarget "Kent Denver Lunch" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +825,7 @@
 				BCE5E8B51EA55DBF00EAE8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

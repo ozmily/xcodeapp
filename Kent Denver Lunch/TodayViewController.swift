@@ -8,14 +8,25 @@
 
 import UIKit
 import NotificationCenter
+import Alamofire
+
+
+
+func alamo(url: String) -> String {
+    return "Hello, world!"
+}
 
 class TodayViewController: UIViewController, NCWidgetProviding {
    
-    
     @IBOutlet var menu: UILabel!
+  
+//    var request: Alamofire.Request?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let d = arc4random_uniform(100);
+        menu.text = String(d);
+
         // Do any additional setup after loading the view from its nib.
     }
     
@@ -26,12 +37,36 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
-        
+        let d = arc4random_uniform(100);
+        menu.text = String(d);
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
+//        getData(completion: { data in
+//            self.request = data
+//        })
         
         completionHandler(NCUpdateResult.newData)
     }
+
     
 }
+
+//func getData(completion: @escaping ([String]) -> Void) {
+//    Alamofire.request("https://httpbin.org/get").responseJSON { response in
+//        guard response.result.isSuccess else {
+//            print("Error")
+//            completion([String]())
+//            return
+//        }
+//        
+//        guard let responseJSON = response.result.value as? [String: Any] else {
+//            print("Invalid response");
+//            completion([String]())
+//            return
+//        }
+//        
+//        print(responseJSON)
+//        completion([String]())
+//    }
+//}
