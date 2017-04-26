@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kent Denver Lunch/TodayViewController.swift"
-            timestampString = "514823513.513618"
+            timestampString = "514933568.465351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60">
+            startingLineNumber = "65"
+            endingLineNumber = "65">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,59 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kent Denver Lunch/TodayViewController.swift"
-            timestampString = "514823513.513618"
+            timestampString = "514933568.465351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kent Denver Lunch/TodayViewController.swift"
-            timestampString = "514823336.44208"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kent_Denver_Lunch.TodayViewController.viewDidLoad () -&gt; ()"
-                  moduleName = "Kent Denver Lunch"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zmily/Desktop/Kent%20Denver%20Lunch%20Menu/Kent%20Denver%20Lunch/TodayViewController.swift"
-                  timestampString = "514931968.084493"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kent_Denver_Lunch.TodayViewController.(viewDidLoad () -&gt; ()).(closure #1)"
-                  moduleName = "Kent Denver Lunch"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zmily/Desktop/Kent%20Denver%20Lunch%20Menu/Kent%20Denver%20Lunch/TodayViewController.swift"
-                  timestampString = "514931968.087126"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
+            startingLineNumber = "67"
+            endingLineNumber = "67">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

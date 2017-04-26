@@ -22,9 +22,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   
     
     override func viewDidLoad() {
+        print("Here")
         Alamofire.request("https://sheets.googleapis.com/v4/spreadsheets/1S_NuQRntEzbvWwR_gdig8g-_l1dxavw1qqTqt_PuuL4/values/B2:B6?key=AIzaSyDDwFFTlWwBNvBUWFD-zx67pqodqHDaZX0").responseJSON { response in
             if let JSON = response.result.value {
-                self.menu.text = "lunch: \(JSON)"
+                let parsedJSON = JSON as! NSDictionary
+                let lunch = parsedJSON.object(forKey: "values")
+                print(JSON)
+                print(lunch!)
+                self.menu.text = "lunch: \(lunch)"
             }
         }
         super.viewDidLoad()
