@@ -21,7 +21,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet var menu: UITextView!
     
     override func viewDidLoad() {
-        Alamofire.request("https://sheets.googleapis.com/v4/spreadsheets/1uAwV-1-LsriKcgwnpzMB9ZnR-2jOVlYwJT9HRaCZHpU/values/B1:B5?key=AIzaSyDDwFFTlWwBNvBUWFD-zx67pqodqHDaZX0").responseJSON { response in
+        Alamofire.request("https://sheets.googleapis.com/v4/spreadsheets/1uAwV-1-LsriKcgwnpzMB9ZnR-2jOVlYwJT9HRaCZHpU/values/B1:B6?key=AIzaSyDDwFFTlWwBNvBUWFD-zx67pqodqHDaZX0").responseJSON { response in
             if let JSON = response.result.value {
                 let parsedJSON = JSON as! NSDictionary
                 let lunch = parsedJSON.object(forKey: "values") as! NSArray
@@ -30,31 +30,41 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 
                 let dateFormatter = DateFormatter()
                 let currentDate = NSDate()
+               
                 
                 dateFormatter.dateFormat = "EEEE"
                 let convertedDate = dateFormatter.string(from: currentDate as Date)
                 print(convertedDate)
                 
                 var wrapper: NSArray
+                var wrapper2: NSArray
+                
+               
                 
                 if (convertedDate == "Monday"){
                     wrapper = lunch[0] as! NSArray
+                    wrapper2 = lunch[1] as! NSArray
                 } else if (convertedDate == "Tuesday"){
                     wrapper = lunch[1] as! NSArray
+                    wrapper2 = lunch[2] as! NSArray
                 }
                 else if (convertedDate == "Wednesday"){
                     wrapper = lunch[2] as! NSArray
+                    wrapper2 = lunch[3] as! NSArray
                 }
                 else if (convertedDate == "Thursday"){
                     wrapper = lunch[3] as! NSArray
+                    wrapper2 = lunch[4] as! NSArray
                 }
                 else {
                     wrapper = lunch[4] as! NSArray
+                    wrapper2 = lunch[5] as! NSArray
                 }
                 
                 let dayMenu = wrapper[0]
+                let dayMenu2 = wrapper2[0]
                 
-                self.menu.text = "\(String(describing: convertedDate)): \n\(String(describing: dayMenu)) "
+                self.menu.text = "\(String(describing: convertedDate)): \(String(describing: dayMenu)) \n\n\(String(describing: "Tomorrow")): \(String(describing: dayMenu2))"
                 
             }
         }
