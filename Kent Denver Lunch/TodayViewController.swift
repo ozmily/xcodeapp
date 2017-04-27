@@ -17,19 +17,45 @@ func alamo(url: String) -> String {
 }
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-   
-    @IBOutlet var menu: UILabel!
-  
+     
+    @IBOutlet var menu: UITextView!
     
     override func viewDidLoad() {
-        print("Here")
-        Alamofire.request("https://sheets.googleapis.com/v4/spreadsheets/1S_NuQRntEzbvWwR_gdig8g-_l1dxavw1qqTqt_PuuL4/values/B2:B6?key=AIzaSyDDwFFTlWwBNvBUWFD-zx67pqodqHDaZX0").responseJSON { response in
+        Alamofire.request("https://sheets.googleapis.com/v4/spreadsheets/1uAwV-1-LsriKcgwnpzMB9ZnR-2jOVlYwJT9HRaCZHpU/values/B1:B5?key=AIzaSyDDwFFTlWwBNvBUWFD-zx67pqodqHDaZX0").responseJSON { response in
             if let JSON = response.result.value {
                 let parsedJSON = JSON as! NSDictionary
-                let lunch = parsedJSON.object(forKey: "values")
-                print(JSON)
-                print(lunch!)
-                self.menu.text = "lunch: \(lunch)"
+                let lunch = parsedJSON.object(forKey: "values") as! NSArray
+                
+                
+                
+                let dateFormatter = DateFormatter()
+                let currentDate = NSDate()
+                
+                dateFormatter.dateFormat = "EEEE"
+                let convertedDate = dateFormatter.string(from: currentDate as Date)
+                print(convertedDate)
+                
+                var wrapper: NSArray
+                
+                if (convertedDate == "Monday"){
+                    wrapper = lunch[0] as! NSArray
+                } else if (convertedDate == "Tuesday"){
+                    wrapper = lunch[1] as! NSArray
+                }
+                else if (convertedDate == "Wednesday"){
+                    wrapper = lunch[2] as! NSArray
+                }
+                else if (convertedDate == "Thursday"){
+                    wrapper = lunch[3] as! NSArray
+                }
+                else {
+                    wrapper = lunch[4] as! NSArray
+                }
+                
+                let dayMenu = wrapper[0]
+                
+                self.menu.text = "\(String(describing: convertedDate)): \n\(String(describing: dayMenu)) "
+                
             }
         }
         super.viewDidLoad()
@@ -46,8 +72,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
-        let d = arc4random_uniform(100);
-        menu.text = String(d);
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
