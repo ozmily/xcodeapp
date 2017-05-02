@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC01C2921EB8E465005BA258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC01C2911EB8E465005BA258 /* Main.storyboard */; };
 		BC7E8F021EB13E5800B6667A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9691C41EA9250900F95BCF /* Alamofire.framework */; };
 		BC7E8F031EB13E5800B6667A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9691C41EA9250900F95BCF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCE5E8741EA55D9600EAE8A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8731EA55D9600EAE8A0 /* AppDelegate.swift */; };
 		BCE5E8761EA55D9600EAE8A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8751EA55D9600EAE8A0 /* ViewController.swift */; };
-		BCE5E8791EA55D9600EAE8A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE5E8771EA55D9600EAE8A0 /* Main.storyboard */; };
 		BCE5E87B1EA55D9600EAE8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE5E87A1EA55D9600EAE8A0 /* Assets.xcassets */; };
 		BCE5E87E1EA55D9600EAE8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE5E87C1EA55D9600EAE8A0 /* LaunchScreen.storyboard */; };
 		BCE5E8891EA55D9600EAE8A0 /* Kent_Denver_Lunch_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5E8881EA55D9600EAE8A0 /* Kent_Denver_Lunch_MenuTests.swift */; };
@@ -128,12 +128,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC01C2911EB8E465005BA258 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		BCA04B0A1EAF9A6000289D4F /* Kent Denver Lunch Menu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kent Denver Lunch Menu.entitlements"; sourceTree = "<group>"; };
 		BCE5E8701EA55D9600EAE8A0 /* Kent Denver Lunch Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kent Denver Lunch Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE5E8731EA55D9600EAE8A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE5E8751EA55D9600EAE8A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCE5E8781EA55D9600EAE8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCE5E87A1EA55D9600EAE8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE5E87D1EA55D9600EAE8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCE5E87F1EA55D9600EAE8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -225,10 +225,10 @@
 		BCE5E8721EA55D9600EAE8A0 /* Kent Denver Lunch Menu */ = {
 			isa = PBXGroup;
 			children = (
+				BC01C2911EB8E465005BA258 /* Main.storyboard */,
 				BCA04B0A1EAF9A6000289D4F /* Kent Denver Lunch Menu.entitlements */,
 				BCE5E8731EA55D9600EAE8A0 /* AppDelegate.swift */,
 				BCE5E8751EA55D9600EAE8A0 /* ViewController.swift */,
-				BCE5E8771EA55D9600EAE8A0 /* Main.storyboard */,
 				BCE5E87A1EA55D9600EAE8A0 /* Assets.xcassets */,
 				BCE5E87C1EA55D9600EAE8A0 /* LaunchScreen.storyboard */,
 				BCE5E87F1EA55D9600EAE8A0 /* Info.plist */,
@@ -469,9 +469,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC01C2921EB8E465005BA258 /* Main.storyboard in Resources */,
 				BCE5E87E1EA55D9600EAE8A0 /* LaunchScreen.storyboard in Resources */,
 				BCE5E87B1EA55D9600EAE8A0 /* Assets.xcassets in Resources */,
-				BCE5E8791EA55D9600EAE8A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,14 +559,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BCE5E8771EA55D9600EAE8A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCE5E8781EA55D9600EAE8A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCE5E87C1EA55D9600EAE8A0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
