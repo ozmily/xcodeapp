@@ -23,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BC424CB31EB92933004908A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		BC7E8F041EB13E5800B6667A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC9691B81EA9250900F95BCF /* Alamofire.xcodeproj */;
@@ -343,6 +350,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BC424CB41EB92933004908A6 /* PBXTargetDependency */,
 			);
 			name = "Kent Denver Lunch";
 			productName = "Kent Denver Lunch";
@@ -381,6 +389,7 @@
 					};
 					BCE5E8A41EA55DBF00EAE8A0 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ACPGVPPM2P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -536,6 +545,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BC424CB41EB92933004908A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = BC424CB31EB92933004908A6 /* PBXContainerItemProxy */;
+		};
 		BC7E8F051EB13E5800B6667A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
@@ -680,11 +694,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Kent Denver Lunch Menu/Kent Denver Lunch Menu.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ACPGVPPM2P;
 				INFOPLIST_FILE = "Kent Denver Lunch Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IoT.Kent-Denver-Lunch-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -696,11 +712,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Kent Denver Lunch Menu/Kent Denver Lunch Menu.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ACPGVPPM2P;
 				INFOPLIST_FILE = "Kent Denver Lunch Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IoT.Kent-Denver-Lunch-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -762,6 +780,7 @@
 		BCE5E8B41EA55DBF00EAE8A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ACPGVPPM2P;
 				INFOPLIST_FILE = "Kent Denver Lunch/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -775,6 +794,7 @@
 		BCE5E8B51EA55DBF00EAE8A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ACPGVPPM2P;
 				INFOPLIST_FILE = "Kent Denver Lunch/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";

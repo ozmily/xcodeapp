@@ -5,10 +5,10 @@
 //  Created by Osamah Zmily on 17/04/2017.
 //  Copyright © 2017 Kent Denver Lunch. All rights reserved.
 //
-
+import Alamofire
 import UIKit
 import NotificationCenter
-import Alamofire
+
 
 
 
