@@ -11,14 +11,14 @@ import Alamofire
 
 class ViewController: UIViewController {
 
-    
+
     @IBOutlet weak var monMenu: UITextView!
     
-    @IBOutlet weak var canada: UITextView!
-    
-    @IBOutlet weak var wedMenu: UITextView!
+    @IBOutlet weak var tuesMenu: UITextView!
 
-    @IBOutlet weak var mexico: UITextView!
+    @IBOutlet weak var wedMenu: UITextView!
+    
+    @IBOutlet weak var thursMenu: UITextView!
     
     @IBOutlet weak var friMenu: UITextView!
     
@@ -47,9 +47,9 @@ class ViewController: UIViewController {
                 let dayMenu5 = wrapper5[0]
                 
                 self.monMenu.text = "\(String(describing: dayMenu1)) "
-                self.canada.text = "\(String(describing: dayMenu2)) "
+                self.tuesMenu.text = "\(String(describing: dayMenu2)) "
                 self.wedMenu.text = "\(String(describing: dayMenu3)) "
-                self.mexico.text = "\(String(describing: dayMenu4)) "
+                self.thursMenu.text = "\(String(describing: dayMenu4)) "
                 self.friMenu.text = "\(String(describing: dayMenu5)) "
             }
         }
